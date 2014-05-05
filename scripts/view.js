@@ -131,7 +131,7 @@ View.prototype._loop = function(){
 		rowOffset += boxSize * 2;
 	}, this);
 	
-	this._ctx.font = '15pt Electrolize';
+	this._ctx.font = View.FONTSIZE = 'pt Electrolize';
     this._ctx.fillStyle = View.TEXTCOLOR;
     this._ctx.fillText('Level: ' + this._game.level, holdOffset + 10, 20);
     this._ctx.fillText('Remaining: ' + (Game.TARGET - this._game.score), holdOffset + (Game.COLUMNS * View.BOXSIZE) - 120, 20);
@@ -155,5 +155,7 @@ View.KEYCODES = {
 	SPACE: 32,
 	P: 80
 };
+
+VIEW.FONTSIZE = window.innerHeight
 
 View.BOXSIZE = 30;
