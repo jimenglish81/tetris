@@ -20,13 +20,13 @@ Block.rotate = function(block) {
 
 Block.rotateBlocks = function(blocks) {
    return blocks.reduce(function(result, row, i, rows){
-	   for (var j = 0, l = row.length; j < l; j++) {
-		   if (!result[l-1-j]) {
-			   result[l-1-j] = [];
-		   }
+      for (var j = 0, l = row.length; j < l; j++) {
+         if (!result[l-1-j]) {
+            result[l-1-j] = [];
+         }
          result[l-1-j][i] = rows[i][j];	
-	   }
-	   return result;
+      }
+      return result;
    }, []);
 };
 
