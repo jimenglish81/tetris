@@ -31,7 +31,7 @@ Block.rotateBlocks = function(blocks) {
 };
 
 Block.build = function(x, y, index) {
-	var blockTypes = Block.TYPES;
+   var blockTypes = Block.TYPES;
    return new Block(blockTypes[index || Math.floor(Math.random() * blockTypes.length)], x, y);
 };
 
