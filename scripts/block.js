@@ -1,7 +1,7 @@
 function Block(blocks, x, y) {
-	this.blocks = blocks;
-	this.x = x;
-	this.y = y;
+   this.blocks = blocks;
+   this.x = x;
+   this.y = y;
 }
 
 Block.prototype.x = null;
@@ -11,7 +11,7 @@ Block.prototype.y = null;
 Block.prototype.blocks = null;
 
 Block.rotate = function(block) {
-	var originalHeight = block.blocks.length;
+   var originalHeight = block.blocks.length;
    var rotatedBlocks = Block.rotateBlocks(block.blocks);
    var height = rotatedBlocks.length;
 
@@ -19,15 +19,15 @@ Block.rotate = function(block) {
 };
 
 Block.rotateBlocks = function(blocks) {
-	return blocks.reduce(function(result, row, i, rows){
-		for (var j = 0, l = row.length; j < l; j++) {
-			if (!result[l-1-j]) {
+   return blocks.reduce(function(result, row, i, rows){
+	   for (var j = 0, l = row.length; j < l; j++) {
+		   if (!result[l-1-j]) {
 			   result[l-1-j] = [];
-			}
+		   }
          result[l-1-j][i] = rows[i][j];	
-		}
-		return result;
-	}, []);
+	   }
+	   return result;
+   }, []);
 };
 
 Block.build = function(x, y, index) {
