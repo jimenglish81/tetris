@@ -156,6 +156,6 @@ View.KEYCODES = {
    P: 80
 };
 
-VIEW.FONTSIZE = window.innerHeight
+View.FONTSIZE = window.innerHeight
 
 View.BOXSIZE = 30;
