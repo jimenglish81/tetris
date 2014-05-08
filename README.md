@@ -1,7 +1,7 @@
 Tetris
 ==============
 
-*Tetris clone TODO*
+*Tetris clone*
 
-[Working version](http://jresolutions.co.uk/tetris/ "Tetris")
+[Working version](http://jimenglish81.github.io/tetris/ "Tetris")
 
